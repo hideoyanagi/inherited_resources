@@ -69,7 +69,7 @@ module InheritedResources
         else
           config = self.resources_configuration[symbol]
           resource_segments << config[:route_name]
-          resource_ivars    << :"@#{config[:instance_name]}" unless config[:singleton]
+          #resource_ivars    << :"@#{config[:instance_name]}" unless config[:singleton]
         end
       end
 
